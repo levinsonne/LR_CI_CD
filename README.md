@@ -36,3 +36,5 @@ pytest
 ### Инструменты
 - [Документация pytest](https://docs.pytest.org/en/stable/index.html)
 - [Документация Ruff](https://docs.astral.sh/ruff/linter/)
+
+calculator is open
