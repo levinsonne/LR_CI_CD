@@ -10,11 +10,11 @@ class TestCase(unittest.TestCase):
 
     def test_drive(self):
         self.car.drive(20)
-        self.assertRaises(Exception, lambda: self.car.drive(80000))
+        self.assertRaises(ValueError, lambda: self.car.drive(80000))
 
     def test_refuel(self):
         # Заправим 20 литров
         self.car.refuel_car(20)
         assert self.car.get_current_fuel_level() == 20
         # Проверим, что будет исключение, если перельем
-        self.assertRaises(Exception, lambda: self.car.refuel_car(80))
+        self.assertRaises(ValueError, lambda: self.car.refuel_car(80))
